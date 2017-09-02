@@ -1,11 +1,17 @@
+
+
+
+/**Esta clase se va a encargar de crear casas a partir de figuras geometricas*/
 class Casa
 {
+    /** Se declaran las variables de instancia*/
     //variables de instancia
     Circle ventana;
     Triangle techo;
     Square pared;
     Square puerta;
     
+    /**En el constructor crearemos los nuevos objetos que formaran parte de la casa*/
     //constructor
     Casa()
     {
@@ -15,6 +21,8 @@ class Casa
         puerta=new Square();
     }
     
+    /**El metodo dibujate tiene la accion de dibujar en cierta ubicacion de la pantalla
+     los objetos que conformaran la casa */
     //metodos
     void dibujate()
     {
@@ -24,6 +32,8 @@ class Casa
         puerta.makeVisible();
     }
     
+    /**El metodo acomodate se encarga de modificar: Tamaño, color y pocision de los objetos para 
+    poder acomodarlos de forma que se vizualice la casa*/
     void acomodate()
     {
         pared.changeColor("green");
